@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/berandaFragment">
+
+    <fragment
+        android:id="@+id/newsDetailsFragment"
+        android:name="com.kominfo.disabilityinformationsystem.NewsDetailsFragment"
+        android:label="News Details"
+        tools:layout="@layout/fragment_news_details" />
+    <fragment
+        android:id="@+id/berandaFragment"
+        android:name="com.kominfo.disabilityinformationsystem.BerandaFragment"
+        android:label="Beranda"
+        tools:layout="@layout/fragment_beranda" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.kominfo.disabilityinformationsystem.NewsFragment"
+        android:label="News"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/twitterFragment"
+        android:name="com.kominfo.disabilityinformationsystem.TwitterFragment"
+        android:label="Twitter"
+        tools:layout="@layout/fragment_twitter" />
+</navigation>
