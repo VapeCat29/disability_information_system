@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/berandaFragment">
+    app:startDestination="@id/layananDukcapilFragment">
 
     <fragment
         android:id="@+id/newsDetailsFragment"
@@ -25,4 +25,9 @@
         android:name="com.kominfo.disabilityinformationsystem.TwitterFragment"
         android:label="Twitter"
         tools:layout="@layout/fragment_twitter" />
+    <fragment
+        android:id="@+id/layananDukcapilFragment"
+        android:name="com.kominfo.disabilityinformationsystem.LayananDukcapilFragment"
+        android:label="fragment_layanan_dukcapil"
+        tools:layout="@layout/fragment_layanan_dukcapil" />
 </navigation>

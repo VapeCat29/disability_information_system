@@ -10,4 +10,8 @@
     <color name="bottom_nav">#1A53A2</color>
     <color name="porcelain">#ecf0f1</color>
     <color name="lightgrey">#F0F0F0</color>
+    <color name="peach">#FFD3B6</color>
+    <color name="poppy_red">#F26963</color>
+    <color name="jade_green">#3B8D87</color>
+    <color name="yellow">#FFD46B</color>
 </resources>
