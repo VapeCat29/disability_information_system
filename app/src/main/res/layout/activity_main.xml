@@ -11,6 +11,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="75dp"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,16 +24,16 @@
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:contentDescription="Navigasi"
-        app:iconSize="25dp"
-        app:cornerRadius="25dp"
         app:backgroundColor="@color/porcelain"
-        app:textColor="@color/white"
+        app:cornerRadius="25dp"
+        app:iconSize="25dp"
         app:iconTint="@color/bottom_nav"
         app:iconTintActive="@color/white"
         app:indicatorColor="@color/bottom_nav"
-        app:layout_constraintBottom_toBottomOf="@+id/NavHostFragment"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/menu_bottom" />
+        app:menu="@menu/menu_bottom"
+        app:textColor="@color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
