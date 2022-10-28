@@ -559,7 +559,18 @@
             app:layout_constraintTop_toBottomOf="@+id/perubahanData_dataTambah_CV"
             tools:ignore="TouchTargetSizeCheck" />
 
-        
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/perubahanData_kirim_btn"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_blue"
+            android:text="Kirim"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/perubahanData_batal_btn"
+            app:layout_constraintTop_toBottomOf="@+id/perubahanData_dataTambah_CV"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
