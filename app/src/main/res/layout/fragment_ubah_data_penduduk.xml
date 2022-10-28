@@ -18,7 +18,7 @@
             android:layout_marginTop="15dp"
             android:src="@drawable/ic_leftarrow"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/perubahanData_title_txt"
