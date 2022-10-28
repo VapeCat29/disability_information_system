@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/aktaKelahiranFragment">
+    app:startDestination="@id/ubahDataPendudukFragment">
 
     <fragment
         android:id="@+id/newsDetailsFragment"
@@ -35,4 +35,14 @@
         android:name="com.kominfo.disabilityinformationsystem.AktaKelahiranFragment"
         android:label="fragment_akta_kelahiran"
         tools:layout="@layout/fragment_akta_kelahiran" />
+    <fragment
+        android:id="@+id/aktifkanDataPendudukFragment"
+        android:name="com.kominfo.disabilityinformationsystem.AktifkanDataPendudukFragment"
+        android:label="fragment_aktifkan_data_penduduk"
+        tools:layout="@layout/fragment_aktifkan_data_penduduk" />
+    <fragment
+        android:id="@+id/ubahDataPendudukFragment"
+        android:name="com.kominfo.disabilityinformationsystem.UbahDataPendudukFragment"
+        android:label="fragment_ubah_data_penduduk"
+        tools:layout="@layout/fragment_ubah_data_penduduk" />
 </navigation>
