@@ -1,10 +1,11 @@
-package com.kominfo.disabilityinformationsystem
+package com.kominfo.disabilityinformationsystem.dukcapil
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.kominfo.disabilityinformationsystem.R
 
 class AktaKelahiranFragment : Fragment() {
 

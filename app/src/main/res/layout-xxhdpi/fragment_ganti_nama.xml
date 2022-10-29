@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dukcapil.AktaKelahiranFragment">
+    tools:context=".dukcapil.GantiNamaFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/aktakelahiran_backbutton"
+            android:id="@+id/gantinama_backbutton"
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_marginStart="15dp"
@@ -21,20 +21,20 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/aktakelahiran_title_txt"
+            android:id="@+id/gantinama_title_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Akta Kelahiran"
-            android:textSize="18sp"
-            android:textColor="@color/black"
             android:fontFamily="@font/poppins_semibold"
-            app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_backbutton"
+            android:text="Perubahan Data / Ganti Nama"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/gantinama_backbutton"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/aktakelahiran_backbutton" />
+            app:layout_constraintTop_toTopOf="@+id/gantinama_backbutton" />
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/aktakelahiran_datakeluarga_CV"
+            android:id="@+id/gantinama_datakeluarga_CV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -45,14 +45,14 @@
             app:cardElevation="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_backbutton">
+            app:layout_constraintTop_toBottomOf="@+id/gantinama_backbutton">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <View
-                    android:id="@+id/aktakelahiran_blue_top"
+                    android:id="@+id/gantinama_blue_top"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:background="@color/light_blue"
@@ -61,7 +61,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_datakeluarga_txt"
+                    android:id="@+id/gantinama_datakeluarga_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -69,13 +69,14 @@
                     android:layout_marginEnd="15dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Data Keluarga"
+                    android:textSize="11sp"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/aktakelahiran_nomorKK_inputlayout"
+                    android:id="@+id/gantinama_nomorKK_inputlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -85,19 +86,20 @@
                     app:boxBackgroundColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_datakeluarga_txt">
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_datakeluarga_txt">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textColor="@color/black"
+                        android:textSize="11sp"
                         app:boxBackgroundColor="@color/white"
                         tools:ignore="DuplicateClickableBoundsCheck" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/aktakelahiran_NIK_inputlayout"
+                    android:id="@+id/gantinama_NIKkepala_inputlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -107,18 +109,19 @@
                     app:boxBackgroundColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_nomorKK_inputlayout">
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_nomorKK_inputlayout">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="11sp"
                         android:fontFamily="@font/poppins"
                         android:textColor="@color/black" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/aktakelahiran_NoWA_inputlayout"
+                    android:id="@+id/gantinama_NoWA_inputlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -128,18 +131,19 @@
                     app:boxBackgroundColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_NIK_inputlayout">
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_NIKkepala_inputlayout">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="11sp"
                         android:fontFamily="@font/poppins"
                         android:textColor="@color/black" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/aktakelahiran_email_inputlayout"
+                    android:id="@+id/gantinama_email_inputlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -149,102 +153,111 @@
                     app:boxBackgroundColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_NoWA_inputlayout">
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_NoWA_inputlayout">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textSize="11sp"
                         android:fontFamily="@font/poppins"
                         android:textColor="@color/black" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
-                    android:id="@+id/aktakelahiran_KKaktif_txt"
+                    android:id="@+id/gantinama_KKaktif_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
+                    android:textSize="11sp"
                     android:fontFamily="@font/poppins"
                     android:text="Kartu Keluarga Aktif"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_uploadKK_btn"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_uploadKK_btn"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_uploadKK_btn" />
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_uploadKK_btn" />
 
                 <Button
-                    android:id="@+id/aktakelahiran_uploadKK_btn"
+                    android:id="@+id/gantinama_uploadKK_btn"
                     style="@style/Widget.MaterialComponents.Button.Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
+                    android:textSize="11sp"
                     android:contentDescription="tombol upload KK"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_email_inputlayout" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_email_inputlayout" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_KTPayah_txt"
+                    android:id="@+id/gantinama_KTPayah_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:layout_marginEnd="140dp"
+                    android:layout_marginEnd="135dp"
                     android:fontFamily="@font/poppins"
-                    android:text="KTP Ayah (Jika masih hidup)"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_KTPayah_btn"
+                    android:textSize="11sp"
+                    android:text="KTP Ayah (tidak wajib)"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_KTPayah_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_KTPayah_btn" />
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_KTPayah_btn" />
 
                 <Button
-                    android:id="@+id/aktakelahiran_KTPayah_btn"
+                    android:id="@+id/gantinama_KTPayah_btn"
                     style="@style/Widget.MaterialComponents.Button.Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
+                    android:textSize="11sp"
                     android:contentDescription="tombol upload KTP Ayah"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_uploadKK_btn" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_uploadKK_btn" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_KTPibu_txt"
+                    android:id="@+id/gantinama_KTPibu_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:layout_marginEnd="140dp"
+                    android:layout_marginEnd="135dp"
+                    android:textSize="11sp"
                     android:fontFamily="@font/poppins"
-                    android:text="KTP Ibu (Jika masih hidup)"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_KTPibu_btn"
+                    android:text="KTP Ibu (tidak wajib)"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_KTPibu_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_KTPibu_btn" />
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_KTPibu_btn" />
 
                 <Button
-                    android:id="@+id/aktakelahiran_KTPibu_btn"
+                    android:id="@+id/gantinama_KTPibu_btn"
                     style="@style/Widget.MaterialComponents.Button.Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_marginBottom="15dp"
+                    android:textSize="11sp"
                     android:contentDescription="tombol upload KTP Ibu"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_KTPayah_btn" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_KTPayah_btn" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/aktakelahiran_keteranganlahir_CV"
+            android:id="@+id/gantinama_keteranganlahir_CV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -255,14 +268,14 @@
             app:cardElevation="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_datakeluarga_CV">
+            app:layout_constraintTop_toBottomOf="@+id/gantinama_datakeluarga_CV">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <View
-                    android:id="@+id/aktakelahiran_blue_top2"
+                    android:id="@+id/gantinama_blue_top2"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:background="@color/light_blue"
@@ -271,206 +284,149 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_keteranganlahir_txt"
+                    android:id="@+id/gantinama_formulir_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Keterangan Lahir"
+                    android:text="Formulir"
+                    android:textSize="11sp"
                     android:textColor="@color/black"
-                    app:layout_constraintEnd_toStartOf="@+id/aktakelahiran_blue_top2"
+                    app:layout_constraintEnd_toStartOf="@+id/gantinama_blue_top2"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_SKL_txt"
+                    android:id="@+id/gantinama_downloadformulir_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="135dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Surat Keterangan Lahir"
+                    android:textSize="11sp"
+                    android:text="Download Formulir Perubahan Nama"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_blue_top2" />
-
-                <TextView
-                    android:id="@+id/aktakelahiran_SKLsumber_txt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="135dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="*Dari Rumah Sakit/Kelurahan"
-                    android:textSize="10sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_SKL_txt" />
-
-                <Button
-                    android:id="@+id/aktakelahiran_SKL_btn"
-                    style="@style/Widget.MaterialComponents.Button.Icon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload surat keterangan lahir"
-                    android:text="Upload"
-                    android:textAllCaps="false"
-                    app:icon="@android:drawable/ic_menu_upload"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_SKLsumber_txt"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_SKL_txt" />
-
-                <TextView
-                    android:id="@+id/aktakelahiran_SPTJM_txt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="73dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="Download Surat Pernyataan Tanggung Jawab Mutlak (SPTJM) Kelahiran"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_SKLsumber_txt" />
-
-                <TextView
-                    android:id="@+id/aktakelahiran_SPTJMketerangan_txt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="73dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="*jika mengunggah keterangan lahir dari kelurahan"
-                    android:textSize="10sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/aktakelahiran_SPTJM_txt" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_blue_top2" />
 
                 <ImageButton
-                    android:id="@+id/aktakelahiran_SPTJM_btn"
+                    android:id="@+id/gantinama_DLformulir_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
                     android:layout_marginEnd="20dp"
                     android:backgroundTint="@color/jade_green"
-                    android:contentDescription="Tombol Download SPTJM"
+                    android:contentDescription="Tombol Download Formulir Perubahan Nama"
                     android:src="@drawable/ic_download"
                     android:text="Download"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/stat_sys_download_done"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_SPTJMketerangan_txt"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_downloadformulir_txt"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_SPTJM_txt"
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_downloadformulir_txt"
                     app:tint="@color/white"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_formulirSPTJM_txt"
+                    android:id="@+id/gantinama_UPformulir_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    android:layout_marginEnd="135dp"
+                    android:layout_marginEnd="145dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Formulir SPTJM Kelahiran"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_formulirSPTJM_btn"
+                    android:textSize="11sp"
+                    android:text="Upload Formulir Perubahan Nama"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_UPformulir_btn"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_formulirSPTJM_btn" />
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_UPformulir_btn" />
 
                 <Button
-                    android:id="@+id/aktakelahiran_formulirSPTJM_btn"
+                    android:id="@+id/gantinama_UPformulir_btn"
                     style="@style/Widget.MaterialComponents.Button.Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload formulir SPTJM lahir"
+                    android:backgroundTint="@color/bottom_nav"
+                    android:contentDescription="Tombol Upload Formulir Perubahan Nama"
                     android:text="Upload"
+                    android:textSize="11sp"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_SPTJMketerangan_txt" />
-
-                <TextView
-                    android:id="@+id/aktakelahiran_downloadformakta_txt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="73dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="Download Formulir Laporan Akta Kelahiran"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_downloadformakta_btn"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_downloadformakta_btn" />
-
-                <ImageButton
-                    android:id="@+id/aktakelahiran_downloadformakta_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="20dp"
-                    android:backgroundTint="@color/jade_green"
-                    android:contentDescription="tombol download formulir laporan akta kelahiran"
-                    android:src="@drawable/ic_download"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_formulirSPTJM_btn"
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_DLformulir_btn"
                     app:tint="@color/white"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_formlaporankelahiran_txt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="135dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="Formulir Laporan Kelahiran"
-                    android:textSize="13sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_downloadformakta_btn" />
-
-                <TextView
-                    android:id="@+id/aktakelahiran_formlaporankelahiran_ket_txt"
+                    android:id="@+id/gantinama_SKpengadilan_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="135dp"
-                    android:layout_marginBottom="15dp"
                     android:fontFamily="@font/poppins"
-                    android:text="*Sudah ditandatangani"
-                    android:textSize="10sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textSize="11sp"
+                    android:text="Surat Keputusan Pengadilan (tidak wajib)"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_SKpengadilan_btn"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_formlaporankelahiran_txt"
-                    app:layout_constraintVertical_bias="0.0" />
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_SKpengadilan_btn" />
 
                 <Button
-                    android:id="@+id/aktakelahiran_formlaporankelahiran_btn"
+                    android:id="@+id/gantinama_SKpengadilan_btn"
                     style="@style/Widget.MaterialComponents.Button.Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="16dp"
-                    android:contentDescription="tombol upload formulir laporan kelahiran"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload Surat keputusan pengadilan"
                     android:text="Upload"
+                    android:textSize="11sp"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_formlaporankelahiran_ket_txt"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_formlaporankelahiran_txt" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_UPformulir_btn" />
+
+                <TextView
+                    android:id="@+id/gantinama_swafoto_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="135dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Swafoto Bersama Formulir Perubahan Nama"
+                    android:textSize="11sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_swafoto_btn"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_swafoto_btn" />
+
+                <Button
+                    android:id="@+id/gantinama_swafoto_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="15dp"
+                    android:contentDescription="tombol upload swafoto bersama formulir perubahan nama"
+                    android:text="Upload"
+                    android:textSize="11sp"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_SKpengadilan_btn" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/aktakelahiran_datapendukung_CV"
+            android:id="@+id/gantinama_datapendukung_CV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -481,14 +437,14 @@
             app:cardElevation="5dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/aktakelahiran_keteranganlahir_CV">
+            app:layout_constraintTop_toBottomOf="@id/gantinama_keteranganlahir_CV">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <View
-                    android:id="@+id/aktakelahiran_blue_top3"
+                    android:id="@+id/gantinama_blue_top3"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:background="@color/light_blue"
@@ -497,7 +453,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_datapendukung_txt"
+                    android:id="@+id/gantinama_datapendukung_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -505,66 +461,81 @@
                     android:layout_marginEnd="15dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Data Pendukung"
+                    android:textSize="11sp"
                     android:textColor="@color/black"
-                    app:layout_constraintEnd_toStartOf="@+id/aktakelahiran_blue_top3"
+                    app:layout_constraintEnd_toStartOf="@+id/gantinama_blue_top3"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/gantinama_NIK_inputlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Nomor Induk Keluarga"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_blue_top3">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/gantinama_NIK_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black"
+                        android:textSize="11sp"
+                        app:boxBackgroundColor="@color/white"
+                        tools:ignore="DuplicateClickableBoundsCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
                 <TextView
-                    android:id="@+id/aktakelahiran_bukunikah_txt"
+                    android:id="@+id/gantinama_bukunikah_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="135dp"
+                    android:textSize="11sp"
                     android:fontFamily="@font/poppins"
-                    android:text="Buku Nikah / Akta Nikah"
+                    android:text="Buku Nikah / Akta Nikah / SPTJM Orang Tua"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_blue_top3" />
-
-                <TextView
-                    android:id="@+id/aktakelahiran_bukunikah_ket_txt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginEnd="135dp"
-                    android:fontFamily="@font/poppins"
-                    android:text="*Terdapat foto dan nomor nikah"
-                    android:textSize="10sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_bukunikah_txt" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_NIK_inputlayout" />
 
                 <Button
-                    android:id="@+id/aktakelahiran_bukunikah_btn"
+                    android:id="@+id/gantinama_bukunikah_btn"
                     style="@style/Widget.MaterialComponents.Button.Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload buku nikah atau akta nikah"
+                    android:contentDescription="tombol upload buku nikah / akta nikah / SPTJM orang tua"
                     android:text="Upload"
+                    android:textSize="11sp"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_bukunikah_ket_txt"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_bukunikah_txt"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_bukunikah_txt" />
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_bukunikah_txt" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_SPTJMsuamiistri_txt"
+                    android:id="@+id/gantinama_SPTJMsuamiistri_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="73dp"
+                    android:textSize="11sp"
                     android:fontFamily="@font/poppins"
                     android:text="Download Surat Pernyataan Tanggung Jawab Mutlak (SPTJM) Pasangan Suami Istri"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_bukunikah_ket_txt" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_bukunikah_btn" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_SPTJMsuamiistri_ket_txt"
+                    android:id="@+id/gantinama_SPTJMsuamiistri_ket_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -574,75 +545,53 @@
                     android:textSize="10sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_SPTJMsuamiistri_txt" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_SPTJMsuamiistri_txt" />
 
                 <ImageButton
-                    android:id="@+id/aktakelahiran_SPTJMsuamiistri_btn"
+                    android:id="@+id/gantinama_SPTJMsuamiistri_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="20dp"
                     android:backgroundTint="@color/jade_green"
                     android:contentDescription="tombol download SPTJM suami istri"
                     android:src="@drawable/ic_download"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_SPTJMsuamiistri_ket_txt"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_SPTJMsuamiistri_ket_txt"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_SPTJMsuamiistri_txt"
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_SPTJMsuamiistri_txt"
                     app:tint="@color/white"
                     tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_SPTJM2KTP_txt"
+                    android:id="@+id/gantinama_SKPNS_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="135dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto SPTJM dan 2 KTP Saksi"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_SPTJM2KTP_btn"
+                    android:textSize="11sp"
+                    android:text="Foto SK Pensiun bagi PNS pensiun (tidak wajib)"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_SKPNS_btn"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_SPTJM2KTP_btn" />
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_SKPNS_btn" />
 
                 <Button
-                    android:id="@+id/aktakelahiran_SPTJM2KTP_btn"
+                    android:id="@+id/gantinama_SKPNS_btn"
                     style="@style/Widget.MaterialComponents.Button.Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto SPTJM dan 2 KTP saksi"
+                    android:textSize="11sp"
+                    android:contentDescription="tombol upload foto SK Pensiun bagi PNS pensiun"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_SPTJMsuamiistri_ket_txt" />
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/aktakelahiran_alasan_inputlayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="15dp"
-                    android:hint="Alasan Tidak Menampilkan Buku Nikah / Akta Nikah / SPTJM"
-                    app:boxBackgroundColor="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_SPTJM2KTP_btn">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/aktakelahiran_alasan_edittext"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins"
-                        android:textColor="@color/black"
-                        app:boxBackgroundColor="@color/white"
-                        tools:ignore="DuplicateClickableBoundsCheck" />
-
-                </com.google.android.material.textfield.TextInputLayout>
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_SPTJMsuamiistri_ket_txt" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_ijazah_txt"
+                    android:id="@+id/gantinama_ijazah_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -650,12 +599,13 @@
                     android:layout_marginEnd="135dp"
                     android:fontFamily="@font/poppins"
                     android:text="Ijazah"
+                    android:textSize="11sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_alasan_inputlayout" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_SKPNS_btn" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_ijazah_ket_txt"
+                    android:id="@+id/gantinama_ijazah_ket_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -665,70 +615,92 @@
                     android:textSize="10sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_ijazah_txt" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_ijazah_txt" />
 
                 <Button
-                    android:id="@+id/aktakelahiran_ijazah_btn"
+                    android:id="@+id/gantinama_ijazah_btn"
                     style="@style/Widget.MaterialComponents.Button.Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
                     android:contentDescription="tombol upload Ijazah bagi yang memiliki"
                     android:text="Upload"
+                    android:textSize="11sp"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
-                    app:layout_constraintBottom_toBottomOf="@+id/aktakelahiran_ijazah_ket_txt"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_ijazah_ket_txt"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_ijazah_txt" />
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_ijazah_txt" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_swafoto_txt"
+                    android:id="@+id/gantinama_keteranganlahir_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="135dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Swafoto Pelapor"
+                    android:textSize="11sp"
+                    android:text="Keterangan Lahir dari Kelurahan"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_keteranganlahir_btn"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_ijazah_btn" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_ijazah_btn" />
+
+                <Button
+                    android:id="@+id/gantinama_keteranganlahir_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto keterangan lahir dari kelurahan"
+                    android:text="Upload"
+                    android:textSize="11sp"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_ijazah_btn" />
 
                 <TextView
-                    android:id="@+id/aktakelahiran_swafoto_ket_txt"
+                    android:id="@+id/gantinama_aktakelahiran_txt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="135dp"
                     android:fontFamily="@font/poppins"
-                    android:text="*Bersama formulir akta kelahiran dan KTP"
-                    android:textSize="10sp"
+                    android:textSize="11sp"
+                    android:text="Akte Kelahiran"
+                    app:layout_constraintBottom_toBottomOf="@+id/gantinama_aktakelahiran_btn"
+                    app:layout_constraintTop_toTopOf="@+id/gantinama_aktakelahiran_btn"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/aktakelahiran_swafoto_txt" />
+                    tools:layout_editor_absoluteY="472dp" />
 
                 <Button
-                    android:id="@+id/aktakelahiran_swafoto_btn"
+                    android:id="@+id/gantinama_aktakelahiran_btn"
                     style="@style/Widget.MaterialComponents.Button.Icon"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_marginBottom="15dp"
-                    android:contentDescription="tombol upload Swafoto Pelapor bersama formulir akta kelahiran dan KTP"
+                    android:textSize="11sp"
+                    android:contentDescription="tombol upload akta kelahiran"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/aktakelahiran_swafoto_txt" />
+                    app:layout_constraintTop_toBottomOf="@+id/gantinama_keteranganlahir_btn" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/aktakelahiran_batal_btn"
+            android:id="@+id/gantinama_batal_btn"
             android:layout_width="110dp"
             android:layout_height="40dp"
             android:layout_marginTop="35dp"
@@ -736,23 +708,25 @@
             android:layout_marginBottom="40dp"
             android:background="@drawable/btn_grey"
             android:text="Batal"
+            android:textSize="11sp"
             android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_datapendukung_CV"
+            app:layout_constraintTop_toBottomOf="@+id/gantinama_datapendukung_CV"
             tools:ignore="TouchTargetSizeCheck" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/aktakelahiran_kirim_btn"
+            android:id="@+id/gantinama_kirim_btn"
             android:layout_width="110dp"
             android:layout_height="40dp"
             android:layout_marginTop="35dp"
             android:layout_marginEnd="10dp"
             android:background="@drawable/btn_blue"
+            android:textSize="11sp"
             android:text="Kirim"
             android:textColor="@color/white"
-            app:layout_constraintEnd_toStartOf="@+id/aktakelahiran_batal_btn"
-            app:layout_constraintTop_toBottomOf="@+id/aktakelahiran_datapendukung_CV"
+            app:layout_constraintEnd_toStartOf="@+id/gantinama_batal_btn"
+            app:layout_constraintTop_toBottomOf="@+id/gantinama_datapendukung_CV"
             tools:ignore="TouchTargetSizeCheck" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

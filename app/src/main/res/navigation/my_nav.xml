@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/aktaKelahiranFragment">
+    app:startDestination="@id/berandaFragment">
 
     <fragment
         android:id="@+id/newsDetailsFragment"
@@ -14,7 +14,11 @@
         android:id="@+id/berandaFragment"
         android:name="com.kominfo.disabilityinformationsystem.BerandaFragment"
         android:label="Beranda"
-        tools:layout="@layout/fragment_beranda" />
+        tools:layout="@layout/fragment_beranda" >
+        <action
+            android:id="@+id/action_berandaFragment_to_layananDukcapilFragment"
+            app:destination="@id/layananDukcapilFragment" />
+    </fragment>
     <fragment
         android:id="@+id/newsFragment"
         android:name="com.kominfo.disabilityinformationsystem.NewsFragment"
@@ -27,12 +31,24 @@
         tools:layout="@layout/fragment_twitter" />
     <fragment
         android:id="@+id/layananDukcapilFragment"
-        android:name="com.kominfo.disabilityinformationsystem.LayananDukcapilFragment"
+        android:name="com.kominfo.disabilityinformationsystem.dukcapil.LayananDukcapilFragment"
         android:label="fragment_layanan_dukcapil"
-        tools:layout="@layout/fragment_layanan_dukcapil" />
+        tools:layout="@layout/fragment_layanan_dukcapil" >
+        <action
+            android:id="@+id/action_layananDukcapilFragment_to_aktaKelahiranFragment"
+            app:destination="@id/aktaKelahiranFragment" />
+        <action
+            android:id="@+id/action_layananDukcapilFragment_to_gantiNamaFragment"
+            app:destination="@id/gantiNamaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/aktaKelahiranFragment"
-        android:name="com.kominfo.disabilityinformationsystem.AktaKelahiranFragment"
+        android:name="com.kominfo.disabilityinformationsystem.dukcapil.AktaKelahiranFragment"
         android:label="fragment_akta_kelahiran"
         tools:layout="@layout/fragment_akta_kelahiran" />
+    <fragment
+        android:id="@+id/gantiNamaFragment"
+        android:name="com.kominfo.disabilityinformationsystem.dukcapil.GantiNamaFragment"
+        android:label="fragment_ganti_nama"
+        tools:layout="@layout/fragment_ganti_nama" />
 </navigation>
