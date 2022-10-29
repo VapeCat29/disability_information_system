@@ -2,6 +2,7 @@ package com.kominfo.disabilityinformationsystem
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.PopupMenu
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.navigation.NavController
@@ -27,6 +28,17 @@ class MainActivity : AppCompatActivity() {
         navController = findNavController(R.id.NavHostFragment)
         setupActionBarWithNavController(navController)
         setupSmoothBottomMenu()
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            if(destination.id == R.id.splashScreenFragment) {
+                binding.bottomBar.visibility = View.GONE
+            } else if (destination.id == R.id.onboardingFragment) {
+                binding.bottomBar.visibility = View.GONE
+            } else{
+                binding.bottomBar.visibility = View.VISIBLE
+            }
+        }
+
     }
 
     private fun setupSmoothBottomMenu() {

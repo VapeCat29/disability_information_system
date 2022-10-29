@@ -1,17 +1,17 @@
 package com.kominfo.disabilityinformationsystem
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
-import com.kominfo.disabilityinformationsystem.databinding.FragmentBerandaBinding
+import com.kominfo.disabilityinformationsystem.databinding.FragmentOnboardingBinding
 
 
-class BerandaFragment : Fragment() {
+class OnboardingFragment : Fragment() {
 
-    private var _binding: FragmentBerandaBinding? = null
+    private var _binding: FragmentOnboardingBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -19,14 +19,16 @@ class BerandaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentBerandaBinding.inflate(inflater,container,false)
-
-        binding.berandaDukcapilCard.setOnClickListener {
-            val action = BerandaFragmentDirections.actionBerandaFragmentToLayananDukcapilFragment()
-            findNavController().navigate(action)
-        }
+        _binding = FragmentOnboardingBinding.inflate(inflater,container,false)
 
         return binding.root
+    }
+
+    private fun onBoardingFinished(){
+        val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putBoolean("Finished", true)
+        editor.apply()
     }
 
     override fun onDestroyView() {

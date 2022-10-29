@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnboardingFragment">
+
+
+    <ImageView
+        android:id="@+id/onboarding_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/onboarding_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/onboarding_pemerintah_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:contentDescription="logo pemkot makassar"
+        android:src="@drawable/logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/onboarding_pemerintah_txt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Pemerintah Kota Makassar"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/onboarding_pemerintah_img"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_pemerintah_img" />
+
+    <TextView
+        android:id="@+id/onboarding_layanan_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Layanan Sistem Informasi "
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/onboarding_pemerintah_txt"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_pemerintah_txt" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/onboarding_setting_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/onboarding_bg">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/onboarding_tunanetra"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="tuna netra"
+                android:src="@drawable/ic_tunanetra" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/onboarding_tunarungu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="tuna rungu"
+                android:src="@drawable/ic_tunarungu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:layout_columnWeight="1">
+
+            <ImageView
+                android:id="@+id/onboarding_tunawicara"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="tuna wicara"
+                android:src="@drawable/ic_tunawicara" />
+
+        </LinearLayout>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <ImageView
+        android:id="@+id/onboarding_ic_emergencycall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="tombol panggilan darurat"
+        android:src="@drawable/ic_emergencycall"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/onboarding_emergencycall_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Panggilan darurat"
+        android:textColor="@color/bottom_nav"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_ic_emergencycall"
+        app:layout_constraintStart_toEndOf="@+id/onboarding_ic_emergencycall"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_ic_emergencycall" />
+
+    <TextView
+        android:id="@+id/onboarding_beranda_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Beranda"
+        android:textColor="@color/bottom_nav"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_ic_emergencycall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_ic_emergencycall" />
+
+    <ImageView
+        android:id="@+id/onboarding_ic_beranda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_home"
+        android:contentDescription="tombol beranda"
+        app:layout_constraintBottom_toBottomOf="@+id/onboarding_beranda_txt"
+        app:layout_constraintEnd_toStartOf="@+id/onboarding_beranda_txt"
+        app:layout_constraintTop_toTopOf="@+id/onboarding_beranda_txt"
+        app:tint="@color/bottom_nav" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
