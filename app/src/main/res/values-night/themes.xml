@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.DisabilityInformationSystem" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="Theme.DisabilityInformationSystem" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/bottom_nav</item>
         <item name="colorPrimaryVariant">@color/bottom_nav</item>

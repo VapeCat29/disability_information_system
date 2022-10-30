@@ -18,6 +18,9 @@
         <action
             android:id="@+id/action_berandaFragment_to_layananDukcapilFragment"
             app:destination="@id/layananDukcapilFragment" />
+        <action
+            android:id="@+id/action_berandaFragment_to_onboardingFragment"
+            app:destination="@id/onboardingFragment" />
     </fragment>
     <fragment
         android:id="@+id/newsFragment"
@@ -67,5 +70,42 @@
         android:id="@+id/onboardingFragment"
         android:name="com.kominfo.disabilityinformationsystem.OnboardingFragment"
         android:label="fragment_onboarding"
-        tools:layout="@layout/fragment_onboarding" />
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_settingTunaNetraFragment"
+            app:destination="@id/settingTunaNetraFragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_settingTunaRunguFragment"
+            app:destination="@id/settingTunaRunguFragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_settingTunaWicaraFragment"
+            app:destination="@id/settingTunaWicaraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingTunaNetraFragment"
+        android:name="com.kominfo.disabilityinformationsystem.setting.SettingTunaNetraFragment"
+        android:label="fragment_setting_tuna_netra"
+        tools:layout="@layout/fragment_setting_tuna_netra" >
+        <action
+            android:id="@+id/action_settingTunaNetraFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingTunaRunguFragment"
+        android:name="com.kominfo.disabilityinformationsystem.setting.SettingTunaRunguFragment"
+        android:label="fragment_setting_tuna_rungu"
+        tools:layout="@layout/fragment_setting_tuna_rungu" >
+        <action
+            android:id="@+id/action_settingTunaRunguFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingTunaWicaraFragment"
+        android:name="com.kominfo.disabilityinformationsystem.setting.SettingTunaWicaraFragment"
+        android:label="fragment_setting_tuna_wicara"
+        tools:layout="@layout/fragment_setting_tuna_wicara" >
+        <action
+            android:id="@+id/action_settingTunaWicaraFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment" />
+    </fragment>
 </navigation>

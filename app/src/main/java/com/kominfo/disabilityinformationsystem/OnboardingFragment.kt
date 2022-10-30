@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.kominfo.disabilityinformationsystem.databinding.FragmentOnboardingBinding
 
 
@@ -20,6 +21,11 @@ class OnboardingFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentOnboardingBinding.inflate(inflater,container,false)
+
+        binding.onboardingTunanetra.setOnClickListener {
+            findNavController().navigate(R.id.action_onboardingFragment_to_settingTunaNetraFragment)
+        }
+
 
         return binding.root
     }

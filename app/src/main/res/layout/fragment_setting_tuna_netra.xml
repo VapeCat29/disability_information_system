@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting.SettingTunaNetraFragment">
+
+    <ImageView
+        android:id="@+id/settingTN_back_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="Tombol kembali"
+        android:src="@drawable/ic_leftarrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/bottom_nav" />
+
+    <TextView
+        android:id="@+id/settingTN_penglihatan_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Penglihatan"
+        android:textColor="@color/bottom_nav"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTN_back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settingTN_back_btn" />
+
+    <TextView
+        android:id="@+id/settingTN_tampilan_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Tampilan"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingTN_penglihatan_txt" />
+
+    <TextView
+        android:id="@+id/settingTN_kontrastinggi_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Kontras tinggi"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/settingTN_tampilan_txt"
+        app:layout_constraintTop_toBottomOf="@+id/settingTN_tampilan_txt" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/settingTN_kontrastinggi_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="switch speech to text"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTN_kontrastinggi_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settingTN_kontrastinggi_txt" />
+
+    <TextView
+        android:id="@+id/settingTN_kontrasnegatif_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kontras negatif"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTN_kontrasnegatif_switch"
+        app:layout_constraintStart_toStartOf="@+id/settingTN_kontrastinggi_txt"
+        app:layout_constraintTop_toBottomOf="@+id/settingTN_kontrastinggi_switch" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/settingTN_kontrasnegatif_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Switch kontras negatif"
+        app:layout_constraintStart_toStartOf="@+id/settingTN_kontrastinggi_switch"
+        app:layout_constraintTop_toBottomOf="@+id/settingTN_kontrastinggi_switch" />
+
+    <TextView
+        android:id="@+id/settingTN_ukuranteks_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ukuran teks"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTN_ukuranteks_switch"
+        app:layout_constraintStart_toStartOf="@+id/settingTN_kontrasnegatif_txt"
+        app:layout_constraintTop_toTopOf="@+id/settingTN_ukuranteks_switch" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/settingTN_ukuranteks_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Switch ukuran teks"
+        app:layout_constraintStart_toStartOf="@+id/settingTN_kontrasnegatif_switch"
+        app:layout_constraintTop_toBottomOf="@+id/settingTN_kontrasnegatif_switch" />
+</androidx.constraintlayout.widget.ConstraintLayout>

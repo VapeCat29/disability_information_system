@@ -26,16 +26,17 @@ class MainActivity : AppCompatActivity() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
 
         navController = findNavController(R.id.NavHostFragment)
-        setupActionBarWithNavController(navController)
         setupSmoothBottomMenu()
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            if(destination.id == R.id.splashScreenFragment) {
-                binding.bottomBar.visibility = View.GONE
-            } else if (destination.id == R.id.onboardingFragment) {
-                binding.bottomBar.visibility = View.GONE
-            } else{
+            if(destination.id == R.id.berandaFragment) {
                 binding.bottomBar.visibility = View.VISIBLE
+            } else if (destination.id == R.id.newsFragment) {
+                binding.bottomBar.visibility = View.VISIBLE
+            } else if (destination.id == R.id.twitterFragment){
+                binding.bottomBar.visibility = View.VISIBLE
+            }else{
+                binding.bottomBar.visibility = View.GONE
             }
         }
 
