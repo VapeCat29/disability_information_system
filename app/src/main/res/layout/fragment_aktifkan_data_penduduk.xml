@@ -302,7 +302,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_marginBottom="15dp"
-                    android:contentDescription="tombol upload foto Akta"
+                    android:contentDescription="tombol upload foto KTP"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -395,7 +395,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto Akta"
+                    android:contentDescription="tombol upload foto Akta 2"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -422,7 +422,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_marginBottom="15dp"
-                    android:contentDescription="tombol upload foto Akta"
+                    android:contentDescription="tombol upload foto KTP2"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -515,7 +515,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto Akta3"
+                    android:contentDescription="tombol upload foto Akta 3"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -542,7 +542,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
                     android:layout_marginBottom="15dp"
-                    android:contentDescription="tombol upload foto Akta3"
+                    android:contentDescription="tombol upload foto KTP3"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -552,11 +552,6 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
-
-
-
-
-
 
         <androidx.cardview.widget.CardView
             android:id="@+id/aktifkandata_dataTambah_CV"
@@ -621,9 +616,6 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
-
-
-
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/aktifkandata_dataTambah1_inputlayout"
                     android:layout_width="match_parent"
@@ -647,8 +639,8 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
 
+        </androidx.cardview.widget.CardView>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/aktifkandata_batal_btn"

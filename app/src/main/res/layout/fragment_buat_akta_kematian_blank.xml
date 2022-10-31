@@ -147,7 +147,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
-                    android:hint="Email Kepala Keluarga yang meninggal"
+                    android:hint="Email Kepala Keluarga Yang Meninggal"
                     app:boxBackgroundColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -195,7 +195,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
-                    android:hint="NIK yang melakukan Pelaporan"
+                    android:hint="NIK Yang Melakukan Pelaporan"
                     app:boxBackgroundColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -217,7 +217,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto KTP yang melakukan Pelaporan"
+                    android:text="Foto KTP Yang Melakukan Pelaporan"
                     app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoKTP_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoKTP_btn" />
@@ -229,7 +229,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto KK"
+                    android:contentDescription="tombol upload foto KTP"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -310,7 +310,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto KTP yang meninggal"
+                    android:text="Foto KTP Yang Meninggal"
                     app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoKTPMati_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoKTPMati_btn" />
@@ -322,7 +322,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto KK"
+                    android:contentDescription="tombol upload foto KTP Mati"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -336,7 +336,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto Surat Kematian dari lurah"
+                    android:text="Foto Surat Kematian Dari Lurah"
                     app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratLurah_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratLurah_btn" />
@@ -348,7 +348,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto KK"
+                    android:contentDescription="tombol upload foto Surat Lurah"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -362,7 +362,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto Surat Kematian dari Rumah Sakit"
+                    android:text="Foto Surat Kematian Dari Rumah Sakit"
                     app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratRS_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratRS_btn" />
@@ -374,7 +374,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto KK"
+                    android:contentDescription="tombol upload foto Surat Rumah Sakit"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -388,7 +388,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Surat Nikah yang meninggal atau Akte Kelahiran"
+                    android:text="Surat Nikah Yang Meninggal Atau Akte Kelahiran"
                     app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratNikah_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratNikah_btn" />
@@ -400,7 +400,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto KK"
+                    android:contentDescription="tombol upload foto Surat Nikah"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -459,7 +459,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Surat ganti nama bagi keturuanan atau yang telah mengganti nama"
+                    android:text="Surat Ganti Nama Bagi Keturuanan Atau Yang Telah Mengganti Nama"
                     app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratNama_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratNama_btn" />
@@ -471,7 +471,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto KK"
+                    android:contentDescription="tombol upload foto Surat Nama"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -485,7 +485,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto Surat izin penguburan"
+                    android:text="Foto Surat Izin Penguburan"
                     app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratKubur_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratKubur_btn" />
@@ -497,7 +497,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto KK"
+                    android:contentDescription="tombol upload foto Surat Kubur"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -511,7 +511,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto Surat kubur dari yayasan"
+                    android:text="Foto Surat Kubur Dari Yayasan"
                     app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratYayasan_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratYayasan_btn" />
@@ -523,7 +523,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto KK"
+                    android:contentDescription="tombol upload foto Surat Yayasan"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -580,7 +580,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto KK"
+                    android:contentDescription="tombol upload foto Form"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -594,7 +594,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Swafoto Pelapor Bersama Formulir dan KTP"
+                    android:text="Swafoto Pelapor Bersama Formulir Dan KTP"
                     app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadSwafoto_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadSwafoto_btn" />
@@ -606,7 +606,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_marginEnd="15dp"
-                    android:contentDescription="tombol upload foto KK"
+                    android:contentDescription="tombol upload foto Swafoto"
                     android:text="Upload"
                     android:textAllCaps="false"
                     app:icon="@android:drawable/ic_menu_upload"
@@ -645,10 +645,6 @@
             app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_dataTambah_CV"
             tools:ignore="TouchTargetSizeCheck"/>
 
-
-
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 </ScrollView>

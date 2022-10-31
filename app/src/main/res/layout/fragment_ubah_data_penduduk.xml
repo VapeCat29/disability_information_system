@@ -242,7 +242,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="15dp"
-                    android:hint="NIK yang ingin melakukan perubahan"
+                    android:hint="NIK Yang Ingin Melakukan Perubahan"
                     app:boxBackgroundColor="@color/white"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -264,7 +264,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto KTP yang ingin melakukan perubahan bagi 17 tahun keatas"
+                    android:text="Foto KTP Yang Ingin Melakukan Perubahan Bagi 17 Tahun Keatas"
                     app:layout_constraintBottom_toBottomOf="@+id/perubahanData_uploadfotoKTP_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/perubahanData_uploadfotoKTP_btn"/>
@@ -290,7 +290,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto Surat Keputusan Pengadilan jika memiliki"
+                    android:text="Foto Surat Keputusan Pengadilan Jika Memiliki"
                     app:layout_constraintBottom_toBottomOf="@+id/perubahanData_uploadfotoPengadilan_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/perubahanData_uploadfotoPengadilan_btn"/>
@@ -315,7 +315,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto Akta Kelahiran yang ingin melakukan perubahan"
+                    android:text="Foto Akta Kelahiran Yang Ingin Melakukan Perubahan"
                     app:layout_constraintBottom_toBottomOf="@+id/perubahanData_uploadfotoAkta_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/perubahanData_uploadfotoAkta_btn"
@@ -342,7 +342,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto Ijazah yang ingin melakukan perubahan"
+                    android:text="Foto Ijazah Yang Ingin Melakukan Perubahan"
                     app:layout_constraintBottom_toBottomOf="@+id/perubahanData_uploadfotoIjazah_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/perubahanData_uploadfotoIjazah_btn"/>
@@ -368,7 +368,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto SK Pensiun Bagi PNS Pensiun yang ingin melakukan perubahan"
+                    android:text="Foto SK Pensiun Bagi PNS Pensiun Yang Ingin Melakukan Perubahan"
                     app:layout_constraintBottom_toBottomOf="@+id/perubahanData_uploadfotoSK_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/perubahanData_uploadfotoSK_btn"/>
@@ -394,7 +394,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto Buku Nikah yang ingin melakukan perubahan"
+                    android:text="Foto Buku Nikah Yang Ingin Melakukan Perubahan"
                     app:layout_constraintBottom_toBottomOf="@+id/perubahanData_uploadfotoNikah_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/perubahanData_uploadfotoNikah_btn"/>
@@ -521,7 +521,7 @@
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="140dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Swafoto pemohon Bersama formulir perubahan data"
+                    android:text="Swafoto Pemohon Bersama Formulir Perubahan Data"
                     app:layout_constraintBottom_toBottomOf="@+id/perubahanData_uploadSwafoto_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/perubahanData_uploadSwafoto_btn"/>
@@ -573,7 +573,5 @@
             tools:ignore="TouchTargetSizeCheck"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 
 </ScrollView>
