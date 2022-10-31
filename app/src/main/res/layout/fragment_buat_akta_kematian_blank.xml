@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuatAktaKematianBlankFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/BuatAktaKematian_backbutton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_leftarrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/BuatAktaKematian_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buat Akta Kematian"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_backbutton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_backbutton"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/BUatAktaKematian_datakeluarga_CV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="visible"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_backbutton">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/BuatAktaKematian_blue_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/light_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_datakeluarga_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Data Keluarga"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/BuatAktaKematian_nomorKK_inputlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Nomor Kartu Keluarga Yang Meninggal"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_datakeluarga_txt">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        app:boxBackgroundColor="@color/white"
+                        tools:ignore="DuplicateClickableBoundsCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/BuatAktaKematian_NIKKepala_inputlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="NIK Kepala Keluarga Yang Meninggal"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_nomorKK_inputlayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        app:boxBackgroundColor="@color/white"
+                        tools:ignore="DuplicateClickableBoundsCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/BuatAktaKematian_WA_inputlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Nomor WA Kepala Keluarga Yang Meninggal"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_NIKKepala_inputlayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        app:boxBackgroundColor="@color/white"
+                        tools:ignore="DuplicateClickableBoundsCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/BuatAktaKematian_Email_inputlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Email Kepala Keluarga yang meninggal"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_WA_inputlayout">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        app:boxBackgroundColor="@color/white"
+                        tools:ignore="DuplicateClickableBoundsCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_FotoKK_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Foto Kartu Keluarga Yang Meninggal"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoKK_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoKK_btn" />
+
+                <Button
+                    android:id="@+id/BuatAktaKematian_uploadfotoKK_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/BuatAktaKematian_Email_inputlayout" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/BuatAktaKematian_NIKPelapor_inputlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="NIK yang melakukan Pelaporan"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_FotoKK_txt">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        app:boxBackgroundColor="@color/white"
+                        tools:ignore="DuplicateClickableBoundsCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_FotoKTP_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Foto KTP yang melakukan Pelaporan"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoKTP_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoKTP_btn" />
+
+                <Button
+                    android:id="@+id/BuatAktaKematian_uploadfotoKTP_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/BuatAktaKematian_NIKPelapor_inputlayout" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/BuatAktaKematian_datadiri_CV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="visible"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BUatAktaKematian_datakeluarga_CV">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/BuatAktaKematian_blue_top1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/light_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_datadiri_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Data Diri Yang Meninggal"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/BuatAktaKematian_NIK_inputlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="NIK Yang Meninggal"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_datadiri_txt">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        app:boxBackgroundColor="@color/white"
+                        tools:ignore="DuplicateClickableBoundsCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_FotoKTPMati_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Foto KTP yang meninggal"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoKTPMati_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoKTPMati_btn" />
+
+                <Button
+                    android:id="@+id/BuatAktaKematian_uploadfotoKTPMati_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/BuatAktaKematian_NIK_inputlayout" />
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_FotoSuratLurah_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Foto Surat Kematian dari lurah"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratLurah_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratLurah_btn" />
+
+                <Button
+                    android:id="@+id/BuatAktaKematian_uploadfotoSuratLurah_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/BuatAktaKematian_FotoKTPMati_txt" />
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_FotoSuratRS_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Foto Surat Kematian dari Rumah Sakit"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratRS_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratRS_btn" />
+
+                <Button
+                    android:id="@+id/BuatAktaKematian_uploadfotoSuratRS_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/BuatAktaKematian_FotoSuratLurah_txt" />
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_FotoSuratNikah_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Surat Nikah yang meninggal atau Akte Kelahiran"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratNikah_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratNikah_btn" />
+
+                <Button
+                    android:id="@+id/BuatAktaKematian_uploadfotoSuratNikah_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/BuatAktaKematian_FotoSuratRS_txt" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/BuatAktaKematian_dataTambah_CV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="visible"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_datadiri_CV">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/BuatAktaKematian_blue_top2"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/light_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_dataTambah_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Data Pendukung"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_FotoSuratNama_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Surat ganti nama bagi keturuanan atau yang telah mengganti nama"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratNama_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratNama_btn" />
+
+                <Button
+                    android:id="@+id/BuatAktaKematian_uploadfotoSuratNama_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/BuatAktaKematian_dataTambah_txt" />
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_FotoSuratKubur_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Foto Surat izin penguburan"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratKubur_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratKubur_btn" />
+
+                <Button
+                    android:id="@+id/BuatAktaKematian_uploadfotoSuratKubur_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/BuatAktaKematian_FotoSuratNama_txt" />
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_FotoSuratYayasan_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Foto Surat kubur dari yayasan"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoSuratYayasan_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoSuratYayasan_btn" />
+
+                <Button
+                    android:id="@+id/BuatAktaKematian_uploadfotoSuratYayasan_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/BuatAktaKematian_FotoSuratKubur_txt" />
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_Form_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="73dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Download Formulir Akta Kematian"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_FotoSuratYayasan_txt" />
+
+                <ImageButton
+                    android:id="@+id/BuatAktaKematian_Form_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/jade_green"
+                    android:contentDescription="Tombol Download Form"
+                    android:src="@drawable/ic_download"
+                    android:text="Download"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/stat_sys_download_done"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_Form_txt"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_Form_txt"
+                    app:tint="@color/white"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_FotoFormUp_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Upload Foto Formulir Akta Kematian"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadfotoFormUp_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadfotoFormUp_btn" />
+
+                <Button
+                    android:id="@+id/BuatAktaKematian_uploadfotoFormUp_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/BuatAktaKematian_Form_txt" />
+
+                <TextView
+                    android:id="@+id/BuatAktaKematian_Swafoto_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Swafoto Pelapor Bersama Formulir dan KTP"
+                    app:layout_constraintBottom_toBottomOf="@+id/BuatAktaKematian_uploadSwafoto_btn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/BuatAktaKematian_uploadSwafoto_btn" />
+
+                <Button
+                    android:id="@+id/BuatAktaKematian_uploadSwafoto_btn"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_FotoFormUp_txt" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/BuatAktaKematian_batal_btn"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_grey"
+            android:text="Batal"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_dataTambah_CV"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/BuatAktaKematian_kirim_btn"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_blue"
+            android:text="Kirim"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/BuatAktaKematian_batal_btn"
+            app:layout_constraintTop_toBottomOf="@+id/BuatAktaKematian_dataTambah_CV"
+            tools:ignore="TouchTargetSizeCheck"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

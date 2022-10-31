@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/ubahDataPendudukFragment">
+    app:startDestination="@id/buatAktaKematianBlankFragment">
 
     <fragment
         android:id="@+id/newsDetailsFragment"
@@ -45,4 +45,9 @@
         android:name="com.kominfo.disabilityinformationsystem.UbahDataPendudukFragment"
         android:label="fragment_ubah_data_penduduk"
         tools:layout="@layout/fragment_ubah_data_penduduk" />
+    <fragment
+        android:id="@+id/buatAktaKematianBlankFragment"
+        android:name="com.kominfo.disabilityinformationsystem.BuatAktaKematianBlankFragment"
+        android:label="fragment_buat_akta_kematian_blank"
+        tools:layout="@layout/fragment_buat_akta_kematian_blank" />
 </navigation>
