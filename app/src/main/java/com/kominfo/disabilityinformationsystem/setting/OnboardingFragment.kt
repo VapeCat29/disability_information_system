@@ -27,6 +27,14 @@ class OnboardingFragment : Fragment() {
             findNavController().navigate(R.id.action_onboardingFragment_to_settingTunaNetraFragment)
         }
 
+        binding.onboardingTunarungu.setOnClickListener {
+            findNavController().navigate(R.id.action_onboardingFragment_to_settingTunaRunguFragment)
+        }
+
+        binding.onboardingTunawicara.setOnClickListener {
+            findNavController().navigate(R.id.action_onboardingFragment_to_settingTunaWicaraFragment)
+        }
+
         binding.onboardingIcBeranda.setOnClickListener{
             findNavController().navigate(R.id.action_onboardingFragment_to_berandaFragment)
         }

@@ -1,14 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".setting.SettingTunaWicaraFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <ImageView
+        android:id="@+id/settingTW_back_btn"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="Tombol kembali"
+        android:src="@drawable/ic_leftarrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/bottom_nav" />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/settingTW_penglihatan_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Wicara"
+        android:textColor="@color/bottom_nav"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTW_back_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settingTW_back_btn" />
+
+    <TextView
+        android:id="@+id/settingTW_tampilan_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:text="Tampilan"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settingTW_penglihatan_txt" />
+
+    <TextView
+        android:id="@+id/settingTW_speechtotext_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Text-to-speech"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/settingTW_tampilan_txt"
+        app:layout_constraintTop_toBottomOf="@+id/settingTW_tampilan_txt" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/settingTW_speechtotext_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="switch text to speech"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTW_speechtotext_txt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settingTW_speechtotext_txt" />
+
+    <TextView
+        android:id="@+id/settingTW_tampilkananimasi_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Tampilkan animasi"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTW_tampilkananimasi_switch"
+        app:layout_constraintStart_toStartOf="@+id/settingTW_speechtotext_txt"
+        app:layout_constraintTop_toBottomOf="@+id/settingTW_speechtotext_switch" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/settingTW_tampilkananimasi_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Switch tampilkan animasi"
+        app:layout_constraintStart_toStartOf="@+id/settingTW_speechtotext_switch"
+        app:layout_constraintTop_toBottomOf="@+id/settingTW_speechtotext_switch" />
+
+    <TextView
+        android:id="@+id/settingTW_ukuranteks_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Ukuran teks"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTW_ukuranteks_btn"
+        app:layout_constraintStart_toStartOf="@+id/settingTW_tampilkananimasi_txt"
+        app:layout_constraintTop_toTopOf="@+id/settingTW_ukuranteks_btn" />
+
+    <ImageView
+        android:id="@+id/settingTW_ukuranteks_btn"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Tombol pilih ukuran teks"
+        android:src="@drawable/ic_rightarrow"
+        app:layout_constraintEnd_toEndOf="@+id/settingTW_tampilkananimasi_switch"
+        app:layout_constraintStart_toStartOf="@+id/settingTW_tampilkananimasi_switch"
+        app:layout_constraintTop_toBottomOf="@+id/settingTW_tampilkananimasi_switch" />
+
+    <Button
+        android:id="@+id/settingTW_lanjutkan_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        android:text="LANJUTKAN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/settingTW_gayateks_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gaya teks"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTW_gayateks_btn"
+        app:layout_constraintStart_toStartOf="@+id/settingTW_ukuranteks_txt"
+        app:layout_constraintTop_toTopOf="@+id/settingTW_gayateks_btn" />
+
+    <ImageView
+        android:id="@+id/settingTW_gayateks_btn"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_rightarrow"
+        app:layout_constraintEnd_toEndOf="@+id/settingTW_tampilkananimasi_switch"
+        app:layout_constraintStart_toStartOf="@+id/settingTW_tampilkananimasi_switch"
+        app:layout_constraintTop_toBottomOf="@+id/settingTW_ukuranteks_btn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

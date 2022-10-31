@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        android:contentDescription="switch speech to text"
+        android:contentDescription="switch kontras tinggi"
         app:layout_constraintBottom_toBottomOf="@+id/settingTN_kontrastinggi_txt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/settingTN_kontrastinggi_txt" />
@@ -84,18 +84,33 @@
         android:id="@+id/settingTN_ukuranteks_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Ukuran teks"
         android:textColor="@color/black"
-        android:fontFamily="@font/poppins_semibold"
-        app:layout_constraintBottom_toBottomOf="@+id/settingTN_ukuranteks_switch"
+        app:layout_constraintBottom_toBottomOf="@+id/settingTN_ukuranteks_btn"
         app:layout_constraintStart_toStartOf="@+id/settingTN_kontrasnegatif_txt"
-        app:layout_constraintTop_toTopOf="@+id/settingTN_ukuranteks_switch" />
+        app:layout_constraintTop_toTopOf="@+id/settingTN_ukuranteks_btn" />
 
-    <com.google.android.material.materialswitch.MaterialSwitch
-        android:id="@+id/settingTN_ukuranteks_switch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="Switch ukuran teks"
+    <ImageView
+        android:id="@+id/settingTN_ukuranteks_btn"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Tombol pilih ukuran teks"
+        android:src="@drawable/ic_rightarrow"
+        app:layout_constraintEnd_toEndOf="@+id/settingTN_kontrasnegatif_switch"
         app:layout_constraintStart_toStartOf="@+id/settingTN_kontrasnegatif_switch"
         app:layout_constraintTop_toBottomOf="@+id/settingTN_kontrasnegatif_switch" />
+
+    <Button
+        android:id="@+id/settingTN_lanjutkan_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="30dp"
+        android:text="LANJUTKAN"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
