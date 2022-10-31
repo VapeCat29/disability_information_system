@@ -1,5 +1,4 @@
-package com.kominfo.disabilityinformationsystem
-
+package com.kominfo.disabilityinformationsystem.dialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +6,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import com.kominfo.disabilityinformationsystem.databinding.CekpbbDialogBinding
 
-public class CekPbbDialog: DialogFragment() {
+class CekPbbDialog: DialogFragment() {
 
     private val TAG = "PBBDialog"
 

@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.kominfo.disabilityinformationsystem.databinding.FragmentBerandaBinding
+import com.kominfo.disabilityinformationsystem.dialog.CekPbbDialog
+import com.kominfo.disabilityinformationsystem.dialog.PpidDialog
 
 
 class BerandaFragment : Fragment() {
@@ -30,6 +32,11 @@ class BerandaFragment : Fragment() {
             val dialog = CekPbbDialog()
             dialog.show(parentFragmentManager, "PBBDialog")
 
+        }
+
+        binding.berandaPPIDCard.setOnClickListener {
+            val dialog = PpidDialog()
+            dialog.show(parentFragmentManager, "PPIDDialog")
         }
 
         return binding.root
