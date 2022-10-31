@@ -16,5 +16,6 @@
     <color name="greybtn">#696969</color>
     <color name="yellow">#FFD46B</color>
     <color name="light_blue">#6DA2E2</color>
+    <color name="blue_dialog">#E3EDF5</color>
     <color name="green_download_btn">#00FF00</color>
 </resources>

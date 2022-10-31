@@ -26,6 +26,12 @@ class BerandaFragment : Fragment() {
             findNavController().navigate(action)
         }
 
+        binding.berandaCekPBBCard.setOnClickListener {
+            val dialog = CekPbbDialog()
+            dialog.show(parentFragmentManager, "PBBDialog")
+
+        }
+
         return binding.root
     }
 
