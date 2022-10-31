@@ -30,6 +30,11 @@ class LayananDukcapilFragment : Fragment() {
             findNavController().navigate(action)
         }
 
+        binding.dukcapilAktahilangCV.setOnClickListener {
+            val action = LayananDukcapilFragmentDirections.actionLayananDukcapilFragmentToAktaHilangFragment()
+            findNavController().navigate(action)
+        }
+
         return binding.root
     }
 

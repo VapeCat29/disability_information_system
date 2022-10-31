@@ -154,6 +154,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
             android:id="@+id/dukcapil_aktifkandata_CV">
 
             <LinearLayout
@@ -189,6 +190,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
             android:id="@+id/dukcapil_ubahdata_CV"
             android:layout_marginHorizontal="15dp">
 
@@ -224,6 +226,7 @@
             android:layout_marginVertical="15dp"
             android:id="@+id/dukcapil_aktakematian_CV"
             app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -259,6 +262,7 @@
             android:id="@+id/dukcapil_suratpindahdatang_CV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
             app:cardElevation="10dp">
 
             <LinearLayout
@@ -294,6 +298,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
             android:layout_marginHorizontal="15dp">
 
             <LinearLayout
@@ -328,6 +333,7 @@
             android:id="@+id/dukcapil_cetakKK_CV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
             app:cardElevation="10dp">
 
             <LinearLayout

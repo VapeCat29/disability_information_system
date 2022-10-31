@@ -43,6 +43,9 @@
         <action
             android:id="@+id/action_layananDukcapilFragment_to_gantiNamaFragment"
             app:destination="@id/gantiNamaFragment" />
+        <action
+            android:id="@+id/action_layananDukcapilFragment_to_aktaHilangFragment"
+            app:destination="@id/aktaHilangFragment" />
     </fragment>
     <fragment
         android:id="@+id/aktaKelahiranFragment"
@@ -68,7 +71,7 @@
     </fragment>
     <fragment
         android:id="@+id/onboardingFragment"
-        android:name="com.kominfo.disabilityinformationsystem.OnboardingFragment"
+        android:name="com.kominfo.disabilityinformationsystem.setting.OnboardingFragment"
         android:label="fragment_onboarding"
         tools:layout="@layout/fragment_onboarding" >
         <action
@@ -80,6 +83,9 @@
         <action
             android:id="@+id/action_onboardingFragment_to_settingTunaWicaraFragment"
             app:destination="@id/settingTunaWicaraFragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_berandaFragment"
+            app:destination="@id/berandaFragment" />
     </fragment>
     <fragment
         android:id="@+id/settingTunaNetraFragment"
@@ -108,4 +114,9 @@
             android:id="@+id/action_settingTunaWicaraFragment_to_berandaFragment"
             app:destination="@id/berandaFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/aktaHilangFragment"
+        android:name="com.kominfo.disabilityinformationsystem.dukcapil.AktaHilangFragment"
+        android:label="fragment_akta_hilang"
+        tools:layout="@layout/fragment_akta_hilang" />
 </navigation>

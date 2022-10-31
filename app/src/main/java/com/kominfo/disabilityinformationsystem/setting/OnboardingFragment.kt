@@ -1,4 +1,4 @@
-package com.kominfo.disabilityinformationsystem
+package com.kominfo.disabilityinformationsystem.setting
 
 import android.content.Context
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.kominfo.disabilityinformationsystem.R
 import com.kominfo.disabilityinformationsystem.databinding.FragmentOnboardingBinding
 
 
@@ -24,6 +25,15 @@ class OnboardingFragment : Fragment() {
 
         binding.onboardingTunanetra.setOnClickListener {
             findNavController().navigate(R.id.action_onboardingFragment_to_settingTunaNetraFragment)
+        }
+
+        binding.onboardingIcBeranda.setOnClickListener{
+            findNavController().navigate(R.id.action_onboardingFragment_to_berandaFragment)
+        }
+
+        binding.onboardingBerandaTxt.setOnClickListener {
+            findNavController().navigate(R.id.action_onboardingFragment_to_berandaFragment)
+
         }
 
 

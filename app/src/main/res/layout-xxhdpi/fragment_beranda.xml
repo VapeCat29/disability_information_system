@@ -58,7 +58,7 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="Berita"
             android:textColor="@color/black"
-            android:textSize="13sp"
+            android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/beranda_search" />
 
@@ -70,7 +70,7 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="Terkini"
             android:textColor="@color/bottom_nav"
-            android:textSize="13sp"
+            android:textSize="15sp"
             app:layout_constraintBottom_toBottomOf="@+id/beranda_berita_txt"
             app:layout_constraintStart_toEndOf="@+id/beranda_berita_txt"
             app:layout_constraintTop_toTopOf="@+id/beranda_berita_txt" />
@@ -82,7 +82,7 @@
             android:layout_marginEnd="2dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="lihat"
-            android:textSize="11sp"
+            android:textSize="13sp"
             android:textColor="@color/bottom_nav"
             app:layout_constraintBottom_toBottomOf="@+id/beranda_terkini_txt"
             app:layout_constraintEnd_toStartOf="@+id/beranda_lihatberita_btn"
@@ -170,7 +170,7 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="Layanan Publik"
             android:textColor="@color/black"
-            android:textSize="13sp"
+            android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/beranda_berita_card" />
 
@@ -346,7 +346,7 @@
             android:fontFamily="@font/poppins_semibold"
             android:text="Profil"
             android:textColor="@color/black"
-            android:textSize="13sp"
+            android:textSize="15sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 
@@ -367,7 +367,7 @@
             android:layout_marginEnd="2dp"
             android:fontFamily="@font/poppins_semibold"
             android:text="lihat"
-            android:textSize="11sp"
+            android:textSize="13sp"
             android:textColor="@color/bottom_nav"
             app:layout_constraintBottom_toBottomOf="@+id/beranda_ic_lihatprofil"
             app:layout_constraintEnd_toStartOf="@+id/beranda_ic_lihatprofil"
