@@ -13,6 +13,13 @@
         android:theme="@style/Theme.DisabilityInformationSystem"
         tools:targetApi="31">
         <activity
+            android:name=".OnBoarding"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SplashScreen"
             android:exported="false">
             <meta-data
