@@ -315,7 +315,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:fontFamily="@font/poppins"
-                    android:text="Foto Akta Kelahiran Yang Ingin Melakukan Perubahan"
+                    android:text="Foto Akta Kelahiran Yang Ingin
+                    Melakukan Perubahan"
                     app:layout_constraintBottom_toBottomOf="@+id/perubahanData_uploadfotoAkta_btn"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/perubahanData_uploadfotoAkta_btn"
