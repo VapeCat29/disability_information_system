@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/onboarding_background"
+            android:id="@+id/onboarding_background_img"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
@@ -39,6 +39,7 @@
             android:textSize="16sp" />
 
         <TextView
+            android:id="@+id/onboarding_layanansi_txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="75dp"
@@ -50,6 +51,7 @@
     </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/onboarding_linearlayoutbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="110dp"
@@ -60,26 +62,64 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
 
-        <androidx.appcompat.widget.AppCompatButton
+        <ImageButton
+            android:id="@+id/onboarding_netra_btn"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/btn_netra"
-            android:drawableTop="@drawable/tuna_netra"/>
+            android:src="@drawable/tuna_netra"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <ImageButton
+            android:id="@+id/onboarding_rungu_btn"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/btn_rungu" />
+            android:background="@drawable/btn_rungu"
+            android:src="@drawable/tuna_rungu"/>
 
-        <androidx.appcompat.widget.AppCompatButton
+        <ImageButton
+            android:id="@+id/onboarding_wicara_btn"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:background="@drawable/btn_wicara" />
-
+            android:background="@drawable/btn_wicara"
+            android:src="@drawable/tuna_wicara"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/onboarding_linearlayoutbottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/onboarding_panggilan_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="160dp"
+            android:drawableLeft="@drawable/ic_call"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/main_blue"
+            android:text="Panggilan darurat"
+            android:textColor="@color/main_blue"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/onboarding_beranda_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_home"
+            android:drawablePadding="5dp"
+            android:text="Beranda"
+            android:drawableTint="@color/main_blue"
+            android:textColor="@color/main_blue"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
