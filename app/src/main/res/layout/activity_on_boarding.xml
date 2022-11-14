@@ -64,7 +64,8 @@
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/btn_netra" />
+            android:background="@drawable/btn_netra"
+            android:drawableTop="@drawable/tuna_netra"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="90dp"
@@ -79,6 +80,6 @@
 
     </LinearLayout>
 
-    
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
