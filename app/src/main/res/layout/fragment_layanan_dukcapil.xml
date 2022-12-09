@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".LayananDukcapilFragment">
 
-
     <ImageView
         android:id="@+id/dukcapil_background"
         android:layout_width="match_parent"
