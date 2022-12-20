@@ -1,14 +1,400 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SuratPindahKeluarFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content">
 
-</FrameLayout>
+        <ImageView
+            android:id="@+id/iv_backbtn_pindahkeluar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_leftarrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_title_pindahkeluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Surat Pindah Keluar"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_semibold"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_backbtn_pindahkeluar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_backbtn_pindahkeluar" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/CV_pindahkeluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:visibility="visible"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/iv_backbtn_pindahkeluar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/bluetop_pindahkeuar"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/light_blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_data_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Data"
+                    android:textColor="@color/black"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputlayout_noKK_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Nomor Kartu Keluarga"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_data_pindahkeluar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        app:boxBackgroundColor="@color/white"
+                        tools:ignore="DuplicateClickableBoundsCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputlayout_NIK_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="NIK"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputlayout_noKK_pindahkeluar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputlayout_noWA_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Nomor Whatsapp"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputlayout_NIK_pindahkeluar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputlayout_email_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Email"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputlayout_noWA_pindahkeluar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_fotoKK_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="140dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Foto Kartu Keluarga"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_uploadFotoKK_pindahkeluar"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btn_uploadFotoKK_pindahkeluar" />
+
+                <Button
+                    android:id="@+id/btn_uploadFotoKK_pindahkeluar"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload Foto KK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputlayout_email_pindahkeluar" />
+
+                <TextView
+                    android:id="@+id/tv_fotoKTP_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Foto KTP"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_fotoKTP_pindahkeluar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btn_fotoKTP_pindahkeluar" />
+
+                <Button
+                    android:id="@+id/btn_fotoKTP_pindahkeluar"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload KTP"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_uploadFotoKK_pindahkeluar" />
+
+                <TextView
+                    android:id="@+id/tv_jenispindah_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Jenis Perpindahan"
+                    app:layout_constraintBottom_toBottomOf="@+id/dropdown_jenisPindah_pindahkeluar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/dropdown_jenisPindah_pindahkeluar" />
+
+                <Spinner
+                    android:id="@+id/dropdown_jenisPindah_pindahkeluar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:spinnerMode="dropdown"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_fotoKTP_pindahkeluar" />
+
+                <TextView
+                    android:id="@+id/tv_fotoFormulir1_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Foto Formulir F-1.03 (hal.1)"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_fotoFormulir1_pindahkeluar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btn_fotoFormulir1_pindahkeluar" />
+
+                <Button
+                    android:id="@+id/btn_fotoFormulir1_pindahkeluar"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload SPTK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/dropdown_jenisPindah_pindahkeluar" />
+
+                <TextView
+                    android:id="@+id/tv_fotoFormulir2_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Foto Formulir F-1.03 (hal.2)"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_fotoFormulir2_pindahkeluar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btn_fotoFormulir2_pindahkeluar" />
+
+                <Button
+                    android:id="@+id/btn_fotoFormulir2_pindahkeluar"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:contentDescription="tombol upload SPTK"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_fotoFormulir1_pindahkeluar" />
+
+                <TextView
+                    android:id="@+id/tv_downloadFormulir_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Download Formulir F-1.03"
+                    app:layout_constraintBottom_toBottomOf="@+id/Ib_downloadFormulir_pindahkeluar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/Ib_downloadFormulir_pindahkeluar" />
+
+                <ImageButton
+                    android:id="@+id/Ib_downloadFormulir_pindahkeluar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="@color/jade_green"
+                    android:contentDescription="Tombol Download SPTJM"
+                    android:src="@drawable/ic_download"
+                    android:text="Download"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/stat_sys_download_done"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btn_fotoFormulir2_pindahkeluar"
+                    app:tint="@color/white"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/inputlayout_alasanPindah_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="15dp"
+                    android:hint="Alasan Pindah"
+                    app:boxBackgroundColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/Ib_downloadFormulir_pindahkeluar">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/tv_swafoto_pindahkeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/poppins"
+                    android:text="Swafoto Pemohon\nbersama KTP dan F-1.03"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_swafoto_pindahkeluar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btn_swafoto_pindahkeluar" />
+
+                <Button
+                    android:id="@+id/btn_swafoto_pindahkeluar"
+                    style="@style/Widget.MaterialComponents.Button.Icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:contentDescription="tombol upload swafoto"
+                    android:text="Upload"
+                    android:textAllCaps="false"
+                    app:icon="@android:drawable/ic_menu_upload"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/inputlayout_alasanPindah_pindahkeluar" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_batal_pindahkeluar"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/btn_grey"
+            android:text="Batal"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CV_pindahkeluar"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_kirim_pindahkeluar"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_blue"
+            android:text="Kirim"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/btn_batal_pindahkeluar"
+            app:layout_constraintTop_toBottomOf="@+id/CV_pindahkeluar"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
