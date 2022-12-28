@@ -300,7 +300,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/dukcapil_ssuratpindahkeluar_CV"
+                android:id="@+id/dukcapil_suratpindahkeluar_CV"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"

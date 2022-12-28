@@ -1,5 +1,6 @@
 package com.kominfo.disabilityinformationsystem.setting
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -19,5 +20,11 @@ class SettingTunaWicaraFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_setting_tuna_wicara, container, false)
     }
 
+    private fun onBoardingFinished(){
+        val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putBoolean("Finished", true)
+        editor.apply()
+    }
 
 }

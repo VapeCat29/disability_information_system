@@ -37,11 +37,12 @@ class OnboardingFragment : Fragment() {
 
         binding.onboardingIcBeranda.setOnClickListener{
             findNavController().navigate(R.id.action_onboardingFragment_to_berandaFragment)
+            onBoardingFinished()
         }
 
         binding.onboardingBerandaTxt.setOnClickListener {
             findNavController().navigate(R.id.action_onboardingFragment_to_berandaFragment)
-
+            onBoardingFinished()
         }
 
 

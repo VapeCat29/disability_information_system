@@ -35,6 +35,36 @@ class LayananDukcapilFragment : Fragment() {
             findNavController().navigate(action)
         }
 
+        binding.dukcapilAktifkandataCV.setOnClickListener {
+            val action = LayananDukcapilFragmentDirections.actionLayananDukcapilFragmentToAktifkanDataPendudukFragment()
+            findNavController().navigate(action)
+        }
+
+        binding.dukcapilUbahdataCV.setOnClickListener {
+            val action = LayananDukcapilFragmentDirections.actionLayananDukcapilFragmentToUbahDataPendudukFragment()
+            findNavController().navigate(action)
+        }
+
+        binding.dukcapilAktakematianCV.setOnClickListener {
+            val action = LayananDukcapilFragmentDirections.actionLayananDukcapilFragmentToBuatAktaKematianFragment()
+            findNavController().navigate(action)
+        }
+
+        binding.dukcapilSuratpindahdatangCV.setOnClickListener {
+            val action = LayananDukcapilFragmentDirections.actionLayananDukcapilFragmentToSuratPindahDatangFragment()
+            findNavController().navigate(action)
+        }
+
+        binding.dukcapilSuratpindahkeluarCV.setOnClickListener {
+            val action = LayananDukcapilFragmentDirections.actionLayananDukcapilFragmentToSuratPindahKeluarFragment()
+            findNavController().navigate(action)
+        }
+
+        binding.dukcapilCetakKKCV.setOnClickListener {
+            val action = LayananDukcapilFragmentDirections.actionLayananDukcapilFragmentToCetakKartuKeluargaFragment()
+            findNavController().navigate(action)
+        }
+
         return binding.root
     }
 

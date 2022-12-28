@@ -282,19 +282,19 @@
                     android:id="@+id/dukcapil_suratpindahdatang_txt"
                     android:layout_width="80dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
                     android:layout_marginTop="26dp"
                     android:layout_marginBottom="5dp"
-                    android:layout_marginHorizontal="5dp"
-                    android:text="Buat Akta Kematian"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Surat Pindah Datang"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="12sp"
-                    android:fontFamily="@font/poppins_semibold"/>
+                    android:textSize="12sp" />
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/dukcapil_ssuratpindahkeluar_CV"
+            android:id="@+id/dukcapil_suratpindahkeluar_CV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:cardElevation="10dp"

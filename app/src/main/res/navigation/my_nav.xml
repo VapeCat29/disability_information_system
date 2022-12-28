@@ -46,6 +46,24 @@
         <action
             android:id="@+id/action_layananDukcapilFragment_to_aktaHilangFragment"
             app:destination="@id/aktaHilangFragment" />
+        <action
+            android:id="@+id/action_layananDukcapilFragment_to_suratPindahDatangFragment"
+            app:destination="@id/suratPindahDatangFragment" />
+        <action
+            android:id="@+id/action_layananDukcapilFragment_to_suratPindahKeluarFragment"
+            app:destination="@id/suratPindahKeluarFragment" />
+        <action
+            android:id="@+id/action_layananDukcapilFragment_to_cetakKartuKeluargaFragment"
+            app:destination="@id/cetakKartuKeluargaFragment" />
+        <action
+            android:id="@+id/action_layananDukcapilFragment_to_aktifkanDataPendudukFragment"
+            app:destination="@id/aktifkanDataPendudukFragment" />
+        <action
+            android:id="@+id/action_layananDukcapilFragment_to_ubahDataPendudukFragment"
+            app:destination="@id/ubahDataPendudukFragment" />
+        <action
+            android:id="@+id/action_layananDukcapilFragment_to_buatAktaKematianFragment"
+            app:destination="@id/buatAktaKematianFragment" />
     </fragment>
     <fragment
         android:id="@+id/aktaKelahiranFragment"
@@ -119,4 +137,34 @@
         android:name="com.kominfo.disabilityinformationsystem.dukcapil.AktaHilangFragment"
         android:label="fragment_akta_hilang"
         tools:layout="@layout/fragment_akta_hilang" />
+    <fragment
+        android:id="@+id/suratPindahDatangFragment"
+        android:name="com.kominfo.disabilityinformationsystem.dukcapil.SuratPindahDatangFragment"
+        android:label="fragment_surat_pindah_datang"
+        tools:layout="@layout/fragment_surat_pindah_datang" />
+    <fragment
+        android:id="@+id/suratPindahKeluarFragment"
+        android:name="com.kominfo.disabilityinformationsystem.dukcapil.SuratPindahKeluarFragment"
+        android:label="fragment_surat_pindah_keluar"
+        tools:layout="@layout/fragment_surat_pindah_keluar" />
+    <fragment
+        android:id="@+id/cetakKartuKeluargaFragment"
+        android:name="com.kominfo.disabilityinformationsystem.dukcapil.CetakKartuKeluargaFragment"
+        android:label="fragment_cetak_kartu_keluarga"
+        tools:layout="@layout/fragment_cetak_kartu_keluarga" />
+    <fragment
+        android:id="@+id/aktifkanDataPendudukFragment"
+        android:name="com.kominfo.disabilityinformationsystem.dukcapil.AktifkanDataPendudukFragment"
+        android:label="fragment_aktifkan_data_penduduk"
+        tools:layout="@layout/fragment_aktifkan_data_penduduk" />
+    <fragment
+        android:id="@+id/ubahDataPendudukFragment"
+        android:name="com.kominfo.disabilityinformationsystem.dukcapil.UbahDataPendudukFragment"
+        android:label="fragment_ubah_data_penduduk"
+        tools:layout="@layout/fragment_ubah_data_penduduk" />
+    <fragment
+        android:id="@+id/buatAktaKematianFragment"
+        android:name="com.kominfo.disabilityinformationsystem.dukcapil.BuatAktaKematianFragment"
+        android:label="fragment_buat_akta_kematian"
+        tools:layout="@layout/fragment_buat_akta_kematian" />
 </navigation>

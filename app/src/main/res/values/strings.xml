@@ -4,10 +4,26 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string-array name="jenis_akta">
-        <item>AKTA KELAHIRAN</item>
-        <item>AKTA PERKAWINAN</item>
-        <item>AKTA PERCERAIAN</item>
-        <item>AKTA KEMATIAN</item>
-        <item>AKTA PENGAKUAN/PENGANGKATAN DAN PENGESAHAN ANAK</item>
+        <item>Kelahiran</item>
+        <item>Perkawinan</item>
+        <item>Perceraian</item>
+        <item>Kematian</item>
+        <item>Pengakuan/Pengangkatan dan Pengesahan Anak</item>
+    </string-array>
+
+    <string-array name="keperluan_pengaktifan">
+        <item>Kementrian/Pemerintah</item>
+        <item>Asuransi</item>
+        <item>Perbankan</item>
+        <item>Seluler</item>
+        <item>Multifinance</item>
+        <item>Umum</item>
+    </string-array>
+
+    <string name="drop_down_pindahkeluar">DropDownMenuPindahKeluar</string>
+
+    <string-array name="jenis_perpindahan">
+        <item>Provinsi</item>
+        <item>Kota/Kabupaten</item>
     </string-array>
 </resources>

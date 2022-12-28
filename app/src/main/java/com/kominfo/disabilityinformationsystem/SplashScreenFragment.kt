@@ -27,7 +27,7 @@ class SplashScreenFragment : Fragment() {
         Handler(Looper.getMainLooper()).postDelayed({
 
             lifecycleScope.launchWhenResumed{
-                if(onBoardingFinished()){
+                if(onBoardingCheck()){
                     findNavController().navigate(R.id.action_splashScreenFragment_to_berandaFragment)
                 }else{
                     findNavController().navigate(R.id.action_splashScreenFragment_to_onboardingFragment)
@@ -38,7 +38,7 @@ class SplashScreenFragment : Fragment() {
         return binding.root
     }
 
-    private fun onBoardingFinished():Boolean{
+    private fun onBoardingCheck():Boolean{
         val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         return sharedPref.getBoolean("Finished",false)
     }

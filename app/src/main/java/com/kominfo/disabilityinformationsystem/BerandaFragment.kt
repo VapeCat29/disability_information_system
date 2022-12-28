@@ -1,5 +1,6 @@
 package com.kominfo.disabilityinformationsystem
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -25,6 +26,7 @@ class BerandaFragment : Fragment() {
 
         binding.berandaDukcapilCard.setOnClickListener {
             val action = BerandaFragmentDirections.actionBerandaFragmentToLayananDukcapilFragment()
+
             findNavController().navigate(action)
         }
 
@@ -42,8 +44,16 @@ class BerandaFragment : Fragment() {
         return binding.root
     }
 
+    private fun onBoardingFinished(){
+        val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
+        val editor = sharedPref.edit()
+        editor.putBoolean("Finished",true)
+        editor.apply()
+    }
+
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
 }
