@@ -24,6 +24,18 @@ class BerandaFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentBerandaBinding.inflate(inflater,container,false)
 
+        binding.berandaIcPengaturan.setOnClickListener {
+            val action = BerandaFragmentDirections.actionBerandaFragmentToOnboardingFragment()
+
+            findNavController().navigate(action)
+        }
+
+        binding.berandaPengaturanTxt?.setOnClickListener {
+            val action = BerandaFragmentDirections.actionBerandaFragmentToOnboardingFragment()
+
+            findNavController().navigate(action)
+        }
+
         binding.berandaDukcapilCard.setOnClickListener {
             val action = BerandaFragmentDirections.actionBerandaFragmentToLayananDukcapilFragment()
 
